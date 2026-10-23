@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --blue: #061b49;
+    --red: #a50044;
+    --gold: #edbb00;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #071126;
+    color: var(--white);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    min-height: 76px;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff20;
+    background: #071126;
+}
+
+.logo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.logo span,
+h2 span {
+    color: var(--gold);
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d4d8e3;
+    font-size: 13px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    min-height: 570px;
+    padding: 90px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+    background:
+        linear-gradient(110deg, #061b49 0%, #061b49 48%, #a50044 48%, #a50044 100%);
+    animation: appear 1s ease;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.tag {
+    color: var(--gold);
+    font-size: 12px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(70px, 12vw, 135px);
+    line-height: .92;
+    font-weight: 700;
+    animation: slideUp .9s ease both;
+}
+
+h1 span {
+    color: var(--gold);
+}
+
+.description {
+    margin: 25px 0;
+    max-width: 390px;
+    line-height: 1.8;
+    color: #d4d8e3;
+    font-size: 14px;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 22px;
+    background: var(--gold);
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.button:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+.hero-number {
+    text-align: center;
+    min-width: 180px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.hero-number span {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero-number strong {
+    font-family: 'Oswald', sans-serif;
+    font-size: 90px;
+    color: var(--gold);
+}
+
+.hero-number p {
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.players {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(38px, 6vw, 65px);
+    margin-bottom: 40px;
+}
+
+.player-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    text-align: left;
+}
+
+.player-card {
+    min-height: 320px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #a50044, #061b49 80%);
+    border: 1px solid #ffffff20;
+    transition: transform .3s;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+}
+
+.neymar {
+    background: linear-gradient(145deg, #edbb00, #a50044 80%);
+}
+
+.pedri {
+    background: linear-gradient(145deg, #061b49, #174c9b);
+}
+
+.player-number {
+    position: absolute;
+    right: 12px;
+    top: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 130px;
+    color: #ffffff15;
+    font-weight: 700;
+}
+
+.player-role {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    margin-top: 90px;
+}
+
+.player-card h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    line-height: 1.1;
+    margin: 10px 0;
+}
+
+.player-card > p:last-child {
+    color: #e1e5ee;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.about {
+    padding: 85px 10%;
+    background: #0d1932;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about > p:last-child {
+    max-width: 570px;
+    margin: auto;
+    color: #c5ccdb;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+footer {
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-top: 1px solid #ffffff20;
+}
+
+footer p {
+    color: #aab3c5;
+    font-size: 11px;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 700px) {
+    header {
+        padding: 18px 6%;
+    }
+
+    nav {
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 75px 7%;
+        flex-direction: column;
+        align-items: flex-start;
+        background: linear-gradient(145deg, #061b49 55%, #a50044 55%);
+    }
+
+    h1 {
+        font-size: clamp(75px, 18vw, 110px);
+    }
+
+    .hero-number {
+        align-self: flex-end;
+        min-width: auto;
+    }
+
+    .hero-number span {
+        font-size: 28px;
+    }
+
+    .hero-number strong {
+        font-size: 55px;
+    }
+
+    .player-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .player-card {
+        min-height: 280px;
+    }
+
+    .players {
+        padding: 65px 7%;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
