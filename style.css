@@ -1,9 +1,49 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+.barca-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  animation: barcaFloat 3s ease-in-out infinite;
 }
+
+.barca-logo img {
+  width: 280px;
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 15px rgba(237, 187, 0, 0.35));
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.barca-logo img:hover {
+  transform: scale(1.12) rotate(-4deg);
+  filter: drop-shadow(0 0 30px rgba(237, 187, 0, 0.8));
+}
+
+.barca-logo h3 {
+  color: #edbb00;
+  font-size: 14px;
+  letter-spacing: 4px;
+  text-align: center;
+  text-shadow: 0 0 12px rgba(237, 187, 0, 0.4);
+}
+
+@keyframes barcaFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@media (max-width: 700px) {
+  .barca-logo img {
+    width: 200px;
+  }
+}
+
 
 html {
   scroll-behavior: smooth;
