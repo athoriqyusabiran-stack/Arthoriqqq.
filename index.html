@@ -5,19 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#050510">
-  <meta name="description" content="Arthoriqqq — website personal penggemar FC Barcelona. Sejarah, trofi, dan legenda Blaugrana.">
+  <meta name="description" content="ARTHORIQQQ — personal website untuk penggemar FC Barcelona. Visca Barça!">
   <title>ARTHORIQQQ | VISCA BARÇA</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://images.unsplash.com">
 </head>
 <body>
 
-  <div class="stadium-bg"></div>
-  <div class="stadium-shade"></div>
   <div class="noise"></div>
   <div class="red-light"></div>
   <div class="blue-light"></div>
   <div class="lightning"></div>
-  <div class="scanlines"></div>
 
   <header class="navbar">
     <a class="logo-text" href="#home">FC<span>B</span><b>.</b></a>
@@ -29,11 +27,13 @@
       <a href="#players">PLAYERS</a>
       <a href="#social">SOSMED</a>
     </nav>
-    <a href="#anthem" class="nav-anthem">♫ ANTHEM</a>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero" id="home">
+      <div class="stadium-overlay"></div>
+
       <div class="hero-content reveal">
         <p class="overline">WELCOME TO THE BLAUGRANA DARK SIDE</p>
         <h1>VISCA<br><span>BARÇA</span><i>!</i></h1>
@@ -41,10 +41,9 @@
           Born to be a Culer. Built with passion.
           Blaugrana forever, no matter what.
         </p>
-        <div class="hero-buttons">
-          <a href="#history" class="button">ENTER MY WORLD <span>↘</span></a>
-          <a href="#anthem" class="button button-outline">FEEL THE ANTHEM ♫</a>
-        </div>
+        <a href="#about" class="button">
+          ENTER MY WORLD <span>↘</span>
+        </a>
       </div>
 
       <div class="hero-crest">
@@ -52,7 +51,7 @@
         <div class="orbit orbit-two"></div>
         <div class="crest-glow"></div>
         <img
-          src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+          src="https://thumb.wikimedia.org/wikipedia/id/thumb/4/47/FC_Barcelona_%28crest%29.svg/1280px-FC_Barcelona_%28crest%29.svg.png?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
           alt="Logo FC Barcelona"
           class="barca-crest">
         <p>MÉS QUE UN CLUB</p>
@@ -61,9 +60,10 @@
 
       <div class="background-number">1899</div>
       <div class="hero-bottom">CULERS NEVER DIE <span>///</span> BARCELONA</div>
-      <a href="#about" class="scroll-indicator">SCROLL TO ENTER <span>↓</span></a>
+      <a class="scroll-indicator" href="#about">SCROLL TO EXPLORE <span>↓</span></a>
     </section>
 
+    <!-- IDENTITAS -->
     <section class="section about" id="about">
       <div class="section-heading reveal">
         <p class="overline">01 — THE PERSON BEHIND THE COLORS</p>
@@ -91,7 +91,7 @@
         <article class="identity-card reveal">
           <span class="card-number">03</span>
           <div class="card-icon">⌘</div>
-          <p>JURUSAN</p>
+          <p>JURUSAN KULIAH</p>
           <h3>SISTEM INFORMASI</h3>
           <div class="card-line"></div>
         </article>
@@ -106,21 +106,24 @@
       </div>
     </section>
 
+    <!-- SEJARAH BARÇA -->
     <section class="section history" id="history">
       <div class="section-heading reveal">
-        <p class="overline">02 — MORE THAN A CENTURY OF GLORY</p>
-        <h2>THE <span>HISTORY</span></h2>
-        <p>Lebih dari sekadar klub. Sebuah identitas yang diwariskan dari generasi ke generasi.</p>
+        <p class="overline">02 — MORE THAN A FOOTBALL CLUB</p>
+        <h2>THE STORY OF <span>BARÇA</span></h2>
+        <p>Perjalanan panjang klub yang menjadi simbol kebanggaan Catalunya.</p>
       </div>
 
-      <div class="history-banner reveal">
-        <div class="history-banner-content">
-          <span class="history-tag">ESTABLISHED 1899</span>
-          <h3>ONE CLUB.<br><span>ONE IDENTITY.</span></h3>
+      <div class="history-intro reveal">
+        <div class="history-badge">FCB<br><span>1899</span></div>
+        <div>
+          <h3>UN CLUB. UNA HISTÒRIA.</h3>
           <p>
-            FC Barcelona bukan hanya tentang sepak bola.
-            Barça adalah tentang kebanggaan, perjuangan,
-            kreativitas, dan semangat masyarakat Catalonia.
+            FC Barcelona didirikan pada 29 November 1899 oleh Joan Gamper
+            bersama sekelompok pemain yang memiliki kecintaan terhadap sepak bola.
+            Seiring berjalannya waktu, Barça tumbuh menjadi salah satu klub
+            paling dikenal di dunia, dengan identitas permainan, akademi,
+            dan hubungan kuat dengan Catalunya.
           </p>
         </div>
       </div>
@@ -130,13 +133,24 @@
           <span class="timeline-year">1899</span>
           <div class="timeline-dot"></div>
           <div class="timeline-card">
-            <span class="history-tag">THE BEGINNING</span>
-            <h3>Awal Sebuah Legenda</h3>
+            <span class="timeline-tag">THE BEGINNING</span>
+            <h3>Lahirnya FC Barcelona</h3>
             <p>
-              Pada 29 November 1899, Joan Gamper bersama sejumlah
-              pemain mendirikan Football Club Barcelona di kota
-              Barcelona. Dari awal yang sederhana, klub ini tumbuh
-              menjadi salah satu nama terbesar dalam sepak bola dunia.
+              Joan Gamper dan para pemain pendiri membentuk FC Barcelona
+              di kota Barcelona pada 29 November 1899.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <span class="timeline-year">1929</span>
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-tag">FIRST CHAMPIONS</span>
+            <h3>Juara La Liga Pertama</h3>
+            <p>
+              Barça memenangkan edisi perdana Liga Spanyol pada musim 1928–1929,
+              menjadi bagian penting dari sejarah awal kompetisi tersebut.
             </p>
           </div>
         </article>
@@ -145,13 +159,11 @@
           <span class="timeline-year">1957</span>
           <div class="timeline-dot"></div>
           <div class="timeline-card">
-            <span class="history-tag">A NEW HOME</span>
-            <h3>Lahirnya Camp Nou</h3>
+            <span class="timeline-tag">HOME OF CULERS</span>
+            <h3>Camp Nou Dibuka</h3>
             <p>
-              Stadion Camp Nou resmi dibuka pada 24 September 1957.
-              Tempat ini kemudian menjadi rumah bersejarah bagi para
-              Culer, menyaksikan kemenangan, air mata, dan momen
-              yang tidak akan dilupakan para pendukung Barça.
+              Stadion Camp Nou resmi dibuka pada 1957 dan menjadi rumah ikonik
+              bagi para pendukung Barcelona selama beberapa generasi.
             </p>
           </div>
         </article>
@@ -160,12 +172,11 @@
           <span class="timeline-year">1992</span>
           <div class="timeline-dot"></div>
           <div class="timeline-card">
-            <span class="history-tag">EUROPEAN GLORY</span>
-            <h3>Raja Eropa untuk Pertama Kali</h3>
+            <span class="timeline-tag">EUROPEAN GLORY</span>
+            <h3>Piala Eropa Pertama</h3>
             <p>
-              Barcelona memenangkan Piala Eropa pertamanya pada 1992.
-              Gol Ronald Koeman di final melawan Sampdoria membawa
-              klub meraih kejayaan Eropa di Wembley.
+              Di bawah Johan Cruyff, Barcelona meraih Piala Eropa pertamanya
+              setelah mengalahkan Sampdoria di final Wembley.
             </p>
           </div>
         </article>
@@ -174,13 +185,12 @@
           <span class="timeline-year">2009</span>
           <div class="timeline-dot"></div>
           <div class="timeline-card">
-            <span class="history-tag">HISTORIC TREBLE</span>
-            <h3>Enam Gelar dalam Satu Tahun</h3>
+            <span class="timeline-tag">HISTORIC SIX</span>
+            <h3>Musim Enam Trofi</h3>
             <p>
-              Di bawah Pep Guardiola, Barça meraih enam gelar pada
-              2009: Liga Champions, La Liga, Copa del Rey, Piala Super
-              UEFA, Piala Super Spanyol, dan Piala Dunia Antarklub.
-              Sebuah pencapaian yang mengukir sejarah sepak bola.
+              Tim asuhan Pep Guardiola meraih enam gelar dalam satu tahun
+              kalender: Copa del Rey, La Liga, Liga Champions, Piala Super
+              Spanyol, Piala Super UEFA, dan Piala Dunia Antarklub.
             </p>
           </div>
         </article>
@@ -189,117 +199,115 @@
           <span class="timeline-year">2015</span>
           <div class="timeline-dot"></div>
           <div class="timeline-card">
-            <span class="history-tag">MSN ERA</span>
-            <h3>Messi, Suárez, Neymar</h3>
+            <span class="timeline-tag">THE MSN ERA</span>
+            <h3>Treble Kedua</h3>
             <p>
-              Trio MSN menjadi salah satu lini serang paling
-              menakutkan di dunia. Barcelona kembali memenangkan
-              Liga Champions dan meraih treble kedua dalam sejarahnya.
-            </p>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <span class="timeline-year">NOW</span>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <span class="history-tag">THE LEGACY CONTINUES</span>
-            <h3>Semangat Tidak Pernah Padam</h3>
-            <p>
-              Generasi baru meneruskan warisan Blaugrana.
-              Apa pun hasil pertandingan, identitas klub dan
-              dukungan para Culer tetap hidup.
+              Trio Lionel Messi, Luis Suárez, dan Neymar membantu Barcelona
+              meraih La Liga, Copa del Rey, dan Liga Champions pada musim
+              2014–2015.
             </p>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- TROFI -->
     <section class="section trophies" id="trophies">
       <div class="section-heading reveal">
         <p class="overline">03 — HISTORY WRITTEN IN SILVERWARE</p>
-        <h2>THE <span>TROPHIES</span></h2>
-        <p>Beberapa tahun bersejarah ketika Barça berdiri di puncak.</p>
-      </div>
-
-      <div class="trophy-feature reveal">
-        <div class="trophy-symbol">♛</div>
-        <p class="overline">UEFA CHAMPIONS LEAGUE</p>
-        <h3>5 <span>TITLES</span></h3>
-        <p class="trophy-years">1992 · 2006 · 2009 · 2011 · 2015</p>
-        <div class="trophy-line"></div>
-        <p class="trophy-caption">
-          Lima malam kejayaan di kompetisi paling bergengsi Eropa.
-        </p>
+        <h2>THE <span>TROPHY ROOM</span></h2>
+        <p>Beberapa gelar besar Barcelona beserta tahun kemenangannya.</p>
       </div>
 
       <div class="trophy-grid">
         <article class="trophy-card reveal">
-          <span class="trophy-icon">🏆</span>
-          <p>LA LIGA</p>
-          <h3>28 <span>TITLES</span></h3>
-          <p class="trophy-years">
-            1929 · 1945 · 1948 · 1949 · 1952 · 1953 · 1959 · 1960 ·
-            1974 · 1985 · 1991 · 1992 · 1993 · 1994 · 1998 · 1999 ·
-            2005 · 2006 · 2009 · 2010 · 2011 · 2013 · 2015 · 2016 ·
-            2018 · 2019 · 2023 · 2025
+          <div class="trophy-icon">🏆</div>
+          <span class="trophy-count">5 TITLES</span>
+          <h3>UEFA CHAMPIONS LEAGUE</h3>
+          <p class="trophy-years">1992 · 2006 · 2009 · 2011 · 2015</p>
+          <p class="trophy-note">
+            Lima gelar kompetisi antarklub tertinggi Eropa.
           </p>
-          <span class="trophy-note">MUSIM JUARA</span>
         </article>
 
         <article class="trophy-card reveal">
-          <span class="trophy-icon">🏆</span>
-          <p>COPA DEL REY</p>
-          <h3>32 <span>TITLES</span></h3>
+          <div class="trophy-icon">🥇</div>
+          <span class="trophy-count">28 TITLES</span>
+          <h3>LA LIGA</h3>
           <p class="trophy-years">
-            1910 · 1912 · 1913 · 1920 · 1922 · 1925 · 1926 · 1928 ·
-            1942 · 1951 · 1952 · 1953 · 1957 · 1959 · 1963 · 1968 ·
-            1971 · 1978 · 1981 · 1983 · 1988 · 1990 · 1997 · 1998 ·
-            2009 · 2012 · 2015 · 2016 · 2017 · 2018 · 2021 · 2025
+            1929 · 1945 · 1948 · 1949 · 1952 · 1953 · 1959 · 1960 · 1974 ·
+            1985 · 1991 · 1992 · 1993 · 1994 · 1998 · 1999 · 2005 · 2006 ·
+            2009 · 2010 · 2011 · 2013 · 2015 · 2016 · 2018 · 2019 · 2023 · 2025
           </p>
-          <span class="trophy-note">TAHUN FINAL / GELAR</span>
+          <p class="trophy-note">
+            Gelar liga domestik Spanyol, termasuk musim 2024–2025.
+          </p>
         </article>
 
         <article class="trophy-card reveal">
-          <span class="trophy-icon">🏆</span>
-          <p>UEFA SUPER CUP</p>
-          <h3>5 <span>TITLES</span></h3>
+          <div class="trophy-icon">🏆</div>
+          <span class="trophy-count">COPA DEL REY</span>
+          <h3>SPANISH CUP</h3>
           <p class="trophy-years">
-            1992 · 1997 · 2009 · 2011 · 2015
+            1997 · 1998 · 2009 · 2012 · 2015 · 2016 · 2017 · 2018 · 2021 · 2025
           </p>
-          <span class="trophy-note">TAHUN JUARA</span>
+          <p class="trophy-note">
+            Beberapa tahun kemenangan penting di kompetisi piala Spanyol.
+          </p>
         </article>
 
         <article class="trophy-card reveal">
-          <span class="trophy-icon">🏆</span>
-          <p>FIFA CLUB WORLD CUP</p>
-          <h3>3 <span>TITLES</span></h3>
-          <p class="trophy-years">
-            2009 · 2011 · 2015
+          <div class="trophy-icon">🌍</div>
+          <span class="trophy-count">3 TITLES</span>
+          <h3>FIFA CLUB WORLD CUP</h3>
+          <p class="trophy-years">2009 · 2011 · 2015</p>
+          <p class="trophy-note">
+            Juara dunia antarklub pada tiga edisi tersebut.
           </p>
-          <span class="trophy-note">TAHUN JUARA</span>
+        </article>
+
+        <article class="trophy-card reveal">
+          <div class="trophy-icon">✨</div>
+          <span class="trophy-count">5 TITLES</span>
+          <h3>UEFA SUPER CUP</h3>
+          <p class="trophy-years">1992 · 1997 · 2009 · 2011 · 2015</p>
+          <p class="trophy-note">
+            Lima kemenangan Piala Super UEFA.
+          </p>
+        </article>
+
+        <article class="trophy-card reveal">
+          <div class="trophy-icon">🔵🔴</div>
+          <span class="trophy-count">EUROPEAN HONORS</span>
+          <h3>UEFA CUP WINNERS' CUP</h3>
+          <p class="trophy-years">1979 · 1982 · 1989 · 1997</p>
+          <p class="trophy-note">
+            Empat gelar Piala Winners Eropa sebelum kompetisi ini dihentikan.
+          </p>
         </article>
       </div>
 
-      <p class="trophy-footnote">
-        Catatan: daftar di atas merangkum gelar utama dan musim juara.
-        Gelar domestik dihitung menurut kompetisi masing-masing.
+      <p class="trophy-disclaimer reveal">
+        Catatan: daftar Copa del Rey menampilkan beberapa tahun pilihan,
+        bukan seluruh gelar. Jumlah dan daftar gelar mengikuti catatan historis
+        hingga musim 2024–2025.
       </p>
     </section>
 
+    <!-- PLAYERS -->
     <section class="section players" id="players">
       <div class="section-heading reveal">
         <p class="overline">04 — MY FOOTBALL IDOLS</p>
         <h2>THE <span>LEGENDS</span></h2>
-        <p>Tiga pemain favorit dengan gaya bermain yang berbeda.</p>
+        <p>Tiga nama favorit dengan gaya bermain yang berbeda.</p>
       </div>
 
       <div class="player-grid">
         <article class="player-card reveal">
           <div class="player-photo">
             <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Lionel_Messi_2022.jpg"
-              alt="Lionel Messi"
+              src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=85"
+              alt="Suasana lapangan sepak bola"
               loading="lazy">
             <span class="jersey-number">10</span>
             <span class="photo-overlay"></span>
@@ -320,8 +328,8 @@
         <article class="player-card reveal">
           <div class="player-photo">
             <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Neymar_Jr_with_Al_Hilal,_2023.jpg"
-              alt="Neymar Jr."
+              src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85"
+              alt="Lapangan sepak bola"
               loading="lazy">
             <span class="jersey-number">11</span>
             <span class="photo-overlay"></span>
@@ -342,8 +350,8 @@
         <article class="player-card reveal">
           <div class="player-photo">
             <img
-              src="https://commons.wikimedia.org/wiki/Special:FilePath/Pedri_Gonz%C3%A1lez_2022.jpg"
-              alt="Pedri González"
+              src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=85"
+              alt="Lapangan sepak bola untuk menggambarkan permainan Pedri"
               loading="lazy">
             <span class="jersey-number">8</span>
             <span class="photo-overlay"></span>
@@ -363,69 +371,74 @@
       </div>
     </section>
 
-    <section class="anthem-section" id="anthem">
-      <div class="anthem-content reveal">
-        <p class="overline">05 — HEAR THE COLORS</p>
-        <h2>FEEL THE <span>BARÇA</span></h2>
-        <p>
-          Lagu kebanggaan para Culer. Tekan tombol di bawah
-          untuk mendengarkan anthem yang sudah lu siapkan.
-        </p>
-
-        <audio id="barcaAudio" preload="none" loop>
-          <source src="music/cant-del-barca.mp3" type="audio/mpeg">
-          Browser lu tidak mendukung pemutar audio.
-        </audio>
-
-        <button class="music-button" id="musicButton" type="button">
-          <span id="musicIcon">▶</span>
-          <span id="musicLabel">PLAY ANTHEM</span>
-        </button>
-
-        <div class="sound-bars" id="soundBars" aria-hidden="true">
-          <span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span>
-        </div>
-
-        <p class="music-note">
-          Audio lokal: <code>music/cant-del-barca.mp3</code>
-        </p>
-      </div>
-    </section>
-
+    <!-- SOSMED -->
     <section class="social-section" id="social">
-      <p class="overline">06 — CONNECT WITH ME</p>
-      <h2>FIND <span>MY WORLD</span></h2>
-      <p class="social-description">
+      <p class="overline reveal">05 — CONNECT WITH ME</p>
+      <h2 class="reveal">FIND <span>MY WORLD</span></h2>
+      <p class="social-description reveal">
         Follow akun gw dan terhubung lewat media sosial.
       </p>
 
       <div class="social-links">
-        <a class="social-link instagram"
-           href="https://www.instagram.com/arthoriqqq/"
-           target="_blank" rel="noopener noreferrer">
+        <a
+          class="social-link instagram reveal"
+          href="https://www.instagram.com/arthoriqqq/"
+          target="_blank"
+          rel="noopener noreferrer">
           <span class="social-icon">◎</span>
           <span><small>FOLLOW ME ON</small><b>INSTAGRAM ↗</b></span>
         </a>
 
-        <a class="social-link tiktok"
-           href="https://www.tiktok.com/@_torrrrrrrrrrr"
-           target="_blank" rel="noopener noreferrer">
+        <a
+          class="social-link tiktok reveal"
+          href="https://www.tiktok.com/@_torrrrrrrrrrr"
+          target="_blank"
+          rel="noopener noreferrer">
           <span class="social-icon">♪</span>
           <span><small>WATCH ME ON</small><b>TIKTOK ↗</b></span>
         </a>
 
-        <!-- Ganti 628xxxxxxxxxx dengan nomor WhatsApp lu -->
-        <a class="social-link whatsapp"
-           href="https://wa.me/628xxxxxxxxxx"
-           target="_blank" rel="noopener noreferrer">
+        <a
+          class="social-link whatsapp reveal"
+          href="https://wa.me/"
+          target="_blank"
+          rel="noopener noreferrer">
           <span class="social-icon">✆</span>
           <span><small>CHAT WITH ME</small><b>WHATSAPP ↗</b></span>
         </a>
+
+        <a
+          class="social-link spotify reveal"
+          href="https://open.spotify.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          <span class="social-icon">♫</span>
+          <span><small>MY MUSIC PLAYLIST</small><b>SPOTIFY ↗</b></span>
+        </a>
+      </div>
+
+      <div class="spotify-feature reveal">
+        <div class="spotify-art">
+          <span>♫</span>
+          <small>BLAUGRANA VIBES</small>
+        </div>
+        <div class="spotify-info">
+          <p class="overline">NOW PLAYING IN MY WORLD</p>
+          <h3>BARÇA NIGHT VIBES</h3>
+          <p>Playlist buat nemenin malam, highlight, dan momen kemenangan Barça.</p>
+          <!-- Ganti URL di bawah dengan link playlist Spotify milik lo -->
+          <a
+            class="button spotify-button"
+            href="https://open.spotify.com/"
+            target="_blank"
+            rel="noopener noreferrer">
+            OPEN SPOTIFY <span>↗</span>
+          </a>
+        </div>
       </div>
     </section>
 
+    <!-- PENUTUP -->
     <section class="final-section">
       <div class="final-sparks">✦ &nbsp; ✧ &nbsp; ✦</div>
       <p class="final-overline">MY CLUB. MY PRIDE. MY COLORS.</p>
@@ -438,7 +451,7 @@
 
       <div class="final-crest-wrap">
         <img
-          src="https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg"
+          src="https://thumb.wikimedia.org/wikipedia/id/thumb/4/47/FC_Barcelona_%28crest%29.svg/1280px-FC_Barcelona_%28crest%29.svg.png?utm_source=id.wikipedia.org&utm_campaign=index&utm_content=thumbnail"
           alt="Logo FC Barcelona"
           class="final-crest"
           loading="lazy">
@@ -456,53 +469,30 @@
   </footer>
 
   <script>
-    const audio = document.getElementById("barcaAudio");
-    const musicButton = document.getElementById("musicButton");
-    const musicIcon = document.getElementById("musicIcon");
-    const musicLabel = document.getElementById("musicLabel");
-    const soundBars = document.getElementById("soundBars");
-
-    musicButton.addEventListener("click", async () => {
-      if (audio.paused) {
-        try {
-          await audio.play();
-          musicIcon.textContent = "Ⅱ";
-          musicLabel.textContent = "PAUSE ANTHEM";
-          soundBars.classList.add("playing");
-        } catch (error) {
-          musicLabel.textContent = "CHECK AUDIO FILE";
-          musicIcon.textContent = "!";
-        }
-      } else {
-        audio.pause();
-        musicIcon.textContent = "▶";
-        musicLabel.textContent = "PLAY ANTHEM";
-        soundBars.classList.remove("playing");
-      }
-    });
-
-    audio.addEventListener("ended", () => {
-      musicIcon.textContent = "▶";
-      musicLabel.textContent = "PLAY ANTHEM";
-      soundBars.classList.remove("playing");
-    });
-
-    const revealItems = document.querySelectorAll(".reveal");
+    // Animasi elemen ketika masuk ke layar.
+    const revealElements = document.querySelectorAll(".reveal");
 
     if ("IntersectionObserver" in window) {
-      const revealObserver = new IntersectionObserver((entries) => {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
-            revealObserver.unobserve(entry.target);
+            observer.unobserve(entry.target);
           }
         });
       }, { threshold: 0.12 });
 
-      revealItems.forEach((item) => revealObserver.observe(item));
+      revealElements.forEach((element) => revealObserver.observe(element));
     } else {
-      revealItems.forEach((item) => item.classList.add("visible"));
+      revealElements.forEach((element) => element.classList.add("visible"));
     }
+
+    // Efek navbar ketika halaman digulir.
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 40);
+    }, { passive: true });
   </script>
 </body>
 </html>
